@@ -1,0 +1,25 @@
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  &__title {
+    font-weight: $font-weight-bold;
+    font-size: $font-size-section;
+    line-height: $line-height-normal;
+    letter-spacing: $letter-spacing-normal;
+    text-align: center;
+    padding-bottom: 50px;
+  }
+  &__filter {
+    text-align: center;
+    padding-bottom: 50px;
+  }
+  &__filter-item {
+    display: inline-block;
+  }
+  &--background {
+    background-color: $color-background-tertiary;
+  }
+  &--middle {
+    padding-top: 0;
+  }
+}

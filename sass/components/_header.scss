@@ -1,0 +1,109 @@
+.header {
+  border-bottom: 1px solid $color-border-primary;
+  font-weight: $font-weight-medium;
+  line-height: $line-height-normal;
+  letter-spacing: $letter-spacing-compact;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    @include tablet {
+      padding-top: 21px;
+      padding-bottom: 21px;
+    }
+    @include desktop {
+      padding-top: 24px;
+      padding-bottom: 25px;
+    }
+  }
+  &__sub-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__sub-container:nth-child(2) {
+    display: none;
+
+    @include tablet {
+      display: block;
+    }
+  }
+  &__sub-container:nth-child(3) {
+    max-height: 40px;
+    display: block;
+
+    @include tablet {
+      display: none;
+    }
+  }
+  &__nav {
+    margin-left: 83px;
+
+    @include desktop {
+      margin-left: 93px;
+    }
+  }
+  &__contact-list {
+    list-style: none;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+    font-size: $font-size-label;
+
+    @include desktop {
+      flex-direction: row;
+      gap: 30px;
+      align-items: center;
+      font-size: $font-size-subtitle;
+    }
+  }
+  &__link {
+    text-decoration: none;
+    color: inherit;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__link:hover,
+  &__link:focus {
+    color: $color-selection;
+    cursor: pointer;
+  }
+  &__link--contact {
+    color: $color-text-tertiary;
+  }
+  &__icon {
+    fill: currentColor;
+    margin-right: 4px;
+
+    @include desktop {
+      margin-right: 6px;
+    }
+  }
+  &__icon--envelope {
+    vertical-align: middle;
+    width: 14px;
+    height: 10px;
+
+    @include desktop {
+      width: 16px;
+      height: 12px;
+    }
+  }
+  &__icon--smartphone {
+    vertical-align: text-top;
+    width: 10px;
+    height: 14px;
+
+    @include desktop {
+      height: 16px;
+    }
+  }
+  &__contact {
+    display: inline-block;
+  }
+}

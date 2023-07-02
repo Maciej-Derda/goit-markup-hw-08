@@ -1,0 +1,77 @@
+.menu-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 64px;
+  position: fixed;
+  inset: 0;
+  padding: 48px 83px 48px 40px;
+  background-color: $color-background-secondary;
+  transform: translateX(100%);
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &__subcontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 64px;
+  }
+  &__list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  &__list--social {
+    display: flex;
+    justify-content: space-between;
+    color: $color-border-quaternary;
+  }
+  &__nav-link {
+    display: inline-block;
+    color: inherit;
+    text-decoration: none;
+    font-size: $font-size-mobile-primary;
+    font-weight: $font-weight-medium;
+    letter-spacing: $letter-spacing-compact;
+  }
+  &__nav-link:hover,
+  &__nav-link:focus,
+  &__telephone:hover,
+  &__telephone:focus {
+    color: $color-selection;
+  }
+  &__nav-link--active {
+    color: $color-selection;
+  }
+  &__nav-link--middle {
+    margin-top: 36px;
+    margin-bottom: 32px;
+  }
+  &__email {
+    display: inline-block;
+    color: $color-selection;
+    text-decoration: none;
+    font-size: $font-size-mobile-secondary;
+    font-weight: $font-weight-medium;
+    letter-spacing: $letter-spacing-compact;
+    margin-bottom: 32px;
+  }
+  &__telephone {
+    display: inline-block;
+    color: $color-text-tertiary;
+    text-decoration: none;
+    font-size: $font-size-logo-mobile;
+    font-weight: $font-weight-medium;
+    letter-spacing: $letter-spacing-compact;
+  }
+  &__social-link {
+    display: inline-block;
+    color: $color-selection;
+    text-decoration: none;
+    font-size: $font-size-title;
+    line-height: $line-height-menu;
+    font-weight: $font-weight-medium;
+    letter-spacing: $letter-spacing-compact;
+  }
+}
