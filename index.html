@@ -177,7 +177,7 @@
       <section class="section">
         <div class="container">
           <ul class="gallery">
-            <li class="gallery__item gallery__item--asset">
+            <li class="gallery__item">
               <figure class="gallery__figure">
                 <div class="gallery__box">
                   <svg width="70" height="70" class="gallery__icon">
@@ -193,7 +193,7 @@
                 </figcaption>
               </figure>
             </li>
-            <li class="gallery__item gallery__item--asset">
+            <li class="gallery__item">
               <figure class="gallery__figure">
                 <div class="gallery__box">
                   <svg width="70" height="70" class="gallery__icon">
@@ -209,7 +209,7 @@
                 </figcaption>
               </figure>
             </li>
-            <li class="gallery__item gallery__item--asset">
+            <li class="gallery__item">
               <figure class="gallery__figure">
                 <div class="gallery__box">
                   <svg width="70" height="70" class="gallery__icon">
@@ -225,7 +225,7 @@
                 </figcaption>
               </figure>
             </li>
-            <li class="gallery__item gallery__item--asset">
+            <li class="gallery__item">
               <figure class="gallery__figure">
                 <div class="gallery__box">
                   <svg width="70" height="70" class="gallery__icon">
@@ -252,10 +252,13 @@
             <li class="gallery__item gallery__item--scope">
               <img
                 class="gallery__img"
-                src="./images/scope1_desktop@1x.jpg"
-                width="370"
-                height="294"
                 alt="tworzenie stron www"
+                src="./images/scope1_desktop@1x.jpg"
+                srcset="
+                  ./images/scope1_desktop@1x.jpg 370w,
+                  ./images/scope1_desktop@2x.jpg 740w
+                "
+                sizes="370px"
               />
               <div class="gallery__label">
                 <h3 class="gallery__title gallery__title--white">
@@ -266,10 +269,13 @@
             <li class="gallery__item gallery__item--scope">
               <img
                 class="gallery__img"
-                src="./images/scope2_desktop@1x.jpg"
-                width="370"
-                height="294"
                 alt="aplikacje mobilne"
+                src="./images/scope2_desktop@1x.jpg"
+                srcset="
+                  ./images/scope2_desktop@1x.jpg 370w,
+                  ./images/scope2_desktop@2x.jpg 740w
+                "
+                sizes="370px"
               />
               <div class="gallery__label">
                 <h3 class="gallery__title gallery__title--white">
@@ -280,10 +286,13 @@
             <li class="gallery__item gallery__item--scope">
               <img
                 class="gallery__img"
-                src="./images/scope3_desktop@1x.jpg"
-                width="370"
-                height="294"
                 alt="grafika komputerowa"
+                src="./images/scope3_desktop@1x.jpg"
+                srcset="
+                  ./images/scope3_desktop@1x.jpg 370w,
+                  ./images/scope3_desktop@2x.jpg 740w
+                "
+                sizes="370px"
               />
               <div class="gallery__label">
                 <h3 class="gallery__title gallery__title--white">
@@ -303,10 +312,17 @@
               <figure class="gallery__figure gallery__figure--team">
                 <img
                   class="gallery__img"
-                  src="./images/team1_desktop@1x.jpg"
-                  width="270"
-                  height="260"
                   alt="Product Designer"
+                  src="./images/team1_mobile@1x.jpg"
+                  srcset="
+                    ./images/team1_mobile@1x.jpg  450w,
+                    ./images/team1_mobile@2x.jpg  900w,
+                    ./images/team1_tablet@1x.jpg  354w,
+                    ./images/team1_tablet@2x.jpg  708w,
+                    ./images/team1_desktop@1x.jpg 270w,
+                    ./images/team1_desktop@2x.jpg 540w
+                  "
+                  sizes="(max-width: 767px) 450px,(max-width: 1199px) 354px, 270px, 100vw"
                 />
                 <figcaption>
                   <h4 class="gallery__title gallery__title--team">John Doe</h4>
@@ -350,10 +366,17 @@
               <figure class="gallery__figure gallery__figure--team">
                 <img
                   class="gallery__img"
-                  src="./images/team2_desktop@1x.jpg"
-                  width="270"
-                  height="260"
                   alt="Frontend Developer"
+                  src="./images/team2_desktop@1x.jpg"
+                  srcset="
+                    ./images/team2_mobile@1x.jpg  450w,
+                    ./images/team2_mobile@2x.jpg  900w,
+                    ./images/team2_tablet@1x.jpg  354w,
+                    ./images/team2_tablet@2x.jpg  708w,
+                    ./images/team2_desktop@1x.jpg 270w,
+                    ./images/team2_desktop@2x.jpg 540w
+                  "
+                  sizes="(max-width: 767px) 450px,(max-width: 1199px) 354px, 270px, 100vw"
                 />
                 <figcaption>
                   <h4 class="gallery__title gallery__title--team">John Doe</h4>
@@ -397,10 +420,17 @@
               <figure class="gallery__figure gallery__figure--team">
                 <img
                   class="gallery__img"
-                  src="./images/team3_desktop@1x.jpg"
-                  width="270"
-                  height="260"
                   alt="Marketing"
+                  src="./images/team3_desktop@1x.jpg"
+                  srcset="
+                    ./images/team3_mobile@1x.jpg  450w,
+                    ./images/team3_mobile@2x.jpg  900w,
+                    ./images/team3_tablet@1x.jpg  354w,
+                    ./images/team3_tablet@2x.jpg  708w,
+                    ./images/team3_desktop@1x.jpg 270w,
+                    ./images/team3_desktop@2x.jpg 540w
+                  "
+                  sizes="(max-width: 767px) 450px,(max-width: 1199px) 354px, 270px, 100vw"
                 />
                 <figcaption>
                   <h4 class="gallery__title gallery__title--team">John Doe</h4>
@@ -444,10 +474,17 @@
               <figure class="gallery__figure gallery__figure--team">
                 <img
                   class="gallery__img"
-                  src="./images/team4_desktop@1x.jpg"
-                  width="270"
-                  height="260"
                   alt="UI Designer"
+                  src="./images/team4_desktop@1x.jpg"
+                  srcset="
+                    ./images/team4_mobile@1x.jpg  450w,
+                    ./images/team4_mobile@2x.jpg  900w,
+                    ./images/team4_tablet@1x.jpg  354w,
+                    ./images/team4_tablet@2x.jpg  708w,
+                    ./images/team4_desktop@1x.jpg 270w,
+                    ./images/team4_desktop@2x.jpg 540w
+                  "
+                  sizes="(max-width: 767px) 450px,(max-width: 1199px) 354px, 270px, 100vw"
                 />
                 <figcaption>
                   <h4 class="gallery__title gallery__title--team">John Doe</h4>
@@ -611,7 +648,7 @@
         </div>
       </div>
     </footer>
-    <!--menu mobilne-->
+    <!--mobile-menu-->
     <div class="menu-container js-menu-container" id="mobile-menu">
       <button class="button button--menu button--close js-close-menu">
         <svg width="40" height="40">

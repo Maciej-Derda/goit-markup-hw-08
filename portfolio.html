@@ -48,11 +48,7 @@
                 class="header__link header__link--contact"
                 href="mailto:info@devstudio.com"
               >
-                <svg
-                  width="16"
-                  height="12"
-                  class="header__icon header__icon--envelope"
-                >
+                <svg class="header__icon header__icon--envelope">
                   <use href="./images/icons.svg#icon-envelope"></use>
                 </svg>
                 <p class="header__contact">info@devstudio.com</p></a
@@ -63,17 +59,24 @@
                 class="header__link header__link--contact"
                 href="tel:+48111111111"
               >
-                <svg
-                  width="10"
-                  height="16"
-                  class="header__icon header__icon--smartphone"
-                >
+                <svg class="header__icon header__icon--smartphone">
                   <use href="./images/icons.svg#icon-smartphone"></use>
                 </svg>
                 <p class="header__contact">+48 111 111 111</p></a
               >
             </li>
           </ul>
+        </div>
+        <div class="header__sub-container">
+          <button
+            class="button button--menu js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg width="40" height="40">
+              <use href="./images/icons.svg#icon-menu"></use>
+            </svg>
+          </button>
         </div>
       </div>
     </header>
@@ -113,7 +116,7 @@
         <!--projects-->
         <div class="container">
           <ul class="gallery">
-            <li class="gallery__item">
+            <li class="gallery__item gallery__item--project">
               <figure class="gallery__figure gallery__figure--project">
                 <img
                   class="gallery__img"
@@ -142,7 +145,7 @@
                 </figcaption>
               </figure>
             </li>
-            <li class="gallery__item">
+            <li class="gallery__item gallery__item--project">
               <figure class="gallery__figure gallery__figure--project">
                 <img
                   class="gallery__img"
@@ -171,7 +174,7 @@
                 </figcaption>
               </figure>
             </li>
-            <li class="gallery__item">
+            <li class="gallery__item gallery__item--project">
               <figure class="gallery__figure gallery__figure--project">
                 <img
                   class="gallery__img"
@@ -200,7 +203,7 @@
                 </figcaption>
               </figure>
             </li>
-            <li class="gallery__item">
+            <li class="gallery__item gallery__item--project">
               <figure class="gallery__figure gallery__figure--project">
                 <img
                   class="gallery__img"
@@ -229,7 +232,7 @@
                 </figcaption>
               </figure>
             </li>
-            <li class="gallery__item">
+            <li class="gallery__item gallery__item--project">
               <figure class="gallery__figure gallery__figure--project">
                 <img
                   class="gallery__img"
@@ -258,7 +261,7 @@
                 </figcaption>
               </figure>
             </li>
-            <li class="gallery__item">
+            <li class="gallery__item gallery__item--project">
               <figure class="gallery__figure gallery__figure--project">
                 <img
                   class="gallery__img"
@@ -287,7 +290,7 @@
                 </figcaption>
               </figure>
             </li>
-            <li class="gallery__item">
+            <li class="gallery__item gallery__item--project">
               <figure class="gallery__figure gallery__figure--project">
                 <img
                   class="gallery__img"
@@ -316,7 +319,7 @@
                 </figcaption>
               </figure>
             </li>
-            <li class="gallery__item">
+            <li class="gallery__item gallery__item--project">
               <figure class="gallery__figure gallery__figure--project">
                 <img
                   class="gallery__img"
@@ -345,7 +348,7 @@
                 </figcaption>
               </figure>
             </li>
-            <li class="gallery__item">
+            <li class="gallery__item gallery__item--project">
               <figure class="gallery__figure gallery__figure--project">
                 <img
                   class="gallery__img"
@@ -448,5 +451,66 @@
         </div>
       </div>
     </footer>
+    <!--mobile-menu-->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="button button--menu button--close js-close-menu">
+        <svg width="40" height="40">
+          <use href="./images/icons.svg#icon-close_40px"></use>
+        </svg>
+      </button>
+      <ul class="menu-container__list">
+        <li>
+          <a class="menu-container__nav-link" href="./index.html">Agencja</a>
+        </li>
+        <li>
+          <a
+            class="menu-container__nav-link menu-container__nav-link--middle menu-container__nav-link--active"
+            href="./portfolio.html"
+            >Portfolio</a
+          >
+        </li>
+        <li>
+          <a class="menu-container__nav-link" href="#">Kontakt</a>
+        </li>
+      </ul>
+      <div class="menu-container__subcontainer">
+        <ul class="menu-container__list">
+          <li>
+            <a class="menu-container__email" href="mailto:info@devstudio.com">
+              info@devstudio.com</a
+            >
+          </li>
+          <li>
+            <a class="menu-container__telephone" href="tel:+48111111111">
+              +48 111 111 111</a
+            >
+          </li>
+        </ul>
+        <ul class="menu-container__list menu-container__list--social">
+          <li>
+            <a class="menu-container__social-link" href="">Instagram</a>
+          </li>
+          |
+          <li>
+            <a class="menu-container__social-link" href="">Twitter</a>
+          </li>
+          |
+          <li>
+            <a class="menu-container__social-link" href="">Facebook</a>
+          </li>
+          |
+          <li>
+            <a class="menu-container__social-link" href="">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./mobile-menu.js"></script>
   </body>
 </html>

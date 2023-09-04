@@ -1,13 +1,22 @@
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @include desktop {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
   &__title {
     font-weight: $font-weight-bold;
-    font-size: $font-size-section;
-    line-height: $line-height-normal;
+    font-size: $font-size-mobile-tertiary;
+    line-height: $line-height-title;
     letter-spacing: $letter-spacing-normal;
     text-align: center;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
+    @include desktop {
+      font-size: $font-size-section;
+      line-height: $line-height-normal;
+      padding-bottom: 50px;
+    }
   }
   &__filter {
     text-align: center;
@@ -20,6 +29,11 @@
     background-color: $color-background-tertiary;
   }
   &--middle {
+    display: none;
     padding-top: 0;
+
+    @include desktop {
+      display: block;
+    }
   }
 }
